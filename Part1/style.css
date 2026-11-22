@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.container,
+.result {
+  width: 450px;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+h1 {
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.form-item {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  font-size: 0.75em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  background-color: #efefef;
+  color: #555;
+  transition-property: border;
+  transition-duration: 1s;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid deepskyblue;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.buttons {
+  text-align: right;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  padding: 8px 20px;
+  font-size: 0.75em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: white;
+  color: #aaa;
+}
+
+.update {
+  background-color: #4a90c8;
+  color: white;
+  border-radius: 3px;
+}
+
+.update:hover {
+  background-color: #357ab0;
+}
+
+#info li {
+  list-style: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9em;
+  color: #555;
+}
+
+#info li b {
+  color: #333;
+}

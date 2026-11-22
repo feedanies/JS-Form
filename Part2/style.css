@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 650px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px 30px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+h1 {
+  font-weight: normal;
+  color: #333;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.section {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.title {
+  width: 180px;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #333;
+  padding-top: 5px;
+}
+
+.title p {
+  font-weight: normal;
+  font-style: italic;
+  color: #999;
+  margin-top: 5px;
+  width: 110px;
+}
+
+.fields {
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-item {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: 0.75em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  background-color: #efefef;
+  color: #555;
+}
+
+input.medium {
+  width: 70%;
+}
+
+input.small {
+  width: 40%;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid deepskyblue;
+}
+
+.buttons {
+  text-align: right;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  padding: 8px 20px;
+  font-size: 0.75em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: white;
+  color: #aaa;
+}
+
+.update {
+  background-color: #4a90c8;
+  color: white;
+  border-radius: 3px;
+}
+
+.update:hover {
+  background-color: #357ab0;
+}

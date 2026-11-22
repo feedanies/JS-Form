@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="page">
+        <div class="container">
+            <h1>Settings</h1>
+
+            <form name="myForm" onsubmit="OnSubmit(event)">
+                <div class="form-item">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" />
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" />
+                </div>
+
+                <div class="form-item">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" />
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="plan">Plan</label>
+                        <input type="text" id="plan" name="plan" />
+                    </div>
+                    <div class="form-item">
+                        <label for="billing">Billing Interval</label>
+                        <select id="billing" name="billing">
+                            <option value="Monthly">Monthly</option>
+                            <option value="Yearly">Yearly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="street">Street Address</label>
+                    <input type="text" id="street" name="street" />
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" />
+                    </div>
+                    <div class="form-item">
+                        <label for="province">Province</label>
+                        <select id="province" name="province">
+                            <option value="Ontario">Ontario</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Alberta">Alberta</option>
+                            <option value="Manitoba">Manitoba</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="zip">ZIP/Postal Code</label>
+                        <input type="text" id="zip" name="zip" />
+                    </div>
+                    <div class="form-item">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="Canada">Canada</option>
+                            <option value="USA">USA</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-item">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" />
+                    </div>
+                    <div class="form-item">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" id="confirm" name="confirm" />
+                    </div>
+                </div>
+                <span class="error" id="password_error"></span>
+
+                <div class="buttons">
+                    <button type="reset" class="cancel" onclick="OnCancel()">CANCEL</button>
+                    <button type="submit" class="update">UPDATE</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="result">
+            <h1>Your Information</h1>
+            <ul id="info"></ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
